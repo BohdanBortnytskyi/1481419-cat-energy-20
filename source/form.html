@@ -36,10 +36,68 @@
   </header>
 
   <main class="page-main">
-    <h1>Подбор программы</h1>
+
+    <header>
+      <h1>Подбор программы</h1>
+      <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </header>
+
+    <form class="food-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <label for="cat-name">Имя:*</label>
+        <input class="food-form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+        <label for="cat-weight">Вес (кг):*</label>
+        <input class="food-form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+        <label for="cat-age">Возраст (лет):*</label>
+        <input class="food-form__input" type="number" name="cat-age" id="cat-age" placeholder="7">
+      </fieldset>
+      <fieldset>
+        <input class="food-form__radio" type="radio" name="program-type" id="program-slim" value="slim" checked>
+        <label for="program-slim">Похудение</label>
+        <input class="food-form__radio" type="radio" name="program-type" id="program-pro" value="pro">
+        <label for="program-pro">Набор массы</label>
+        <input class="food-form__radio" type="radio" name="program-type" id="program-advice" value="advice">
+        <label for="program-advice">Не знаю (нужен ваш совет)</label>
+      </fieldset>
+      <fieldset>
+        <legend>Контактные данные (владельца кота)</legend>
+        <label for="owner-email">E-mail:*</label>
+        <input class="food-form__input food-form__input--email" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+        <label for="owner-phone">Телефон:*</label>
+        <input class="food-form__input food-form__input--phone" type="tel" name="owner-pnone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+      </fieldset>
+      <fieldset>
+        <legend>Комментарий</legend>
+        <textarea class="food-form__area" name="comment" rows="5">Расскажите обо всех повадках кота</textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Дополнительно</legend>
+        <input class="food-form__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+        <label for="sugar-substitute">Сахарозаменитель</label>
+        <input class="food-form__checkbox" type="checkbox" name="drink-water" id="drink-water">
+        <label for="drink-water">Питьевая вода</label>
+        <input class="food-form__checkbox" type="checkbox" name="milk" id="milk">
+        <label for="milk">Молоко</label>
+        <input class="food-form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+        <label for="vitamins">Витамины</label>
+      </fieldset>
+      <button class="basic-button" type="submit">Отправить заявку</button>
+      <span>* — Обязательные поля</span>
+    </form>
+
   </main>
 
   <footer class="page-footer">
+
+    <section class="map">
+      <div class="map__header">
+        <h2 class="map__slogan">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="map__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
+      <img class="map__img" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Карта расположения офиса Cat Energy">
+    </section>
 
     <p class="page-footer__title logo-title"><span>Cat</span> Energy</p>
 
