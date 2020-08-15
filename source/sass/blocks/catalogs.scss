@@ -1,0 +1,25 @@
+.catalogs__item {
+  background-color: $basic-grey-light;
+  margin-top: 20px;
+}
+
+.catalogs__type {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.catalogs__link {
+  display: block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
