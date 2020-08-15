@@ -1,28 +1,20 @@
-.products__list {
-  list-style: none;
-}
-
-.products__item {
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-.products__title {
+.show-more__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $special-grey-dark2;
+  color: $special-black;
 }
 
-.products__properties {
+.show-more__text {
   font-size: 12px;
   line-height: 16px;
   color: $special-grey-dark;
 }
 
-.products__button {
-  font-size: 16px;
+.show-more__button {
+  background-color: $basic-grey-light;
+  color: $special-grey-dark;
 }

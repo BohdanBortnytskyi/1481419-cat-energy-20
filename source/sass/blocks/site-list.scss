@@ -1,0 +1,13 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__item a {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
