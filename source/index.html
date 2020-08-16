@@ -100,11 +100,11 @@
           </p>
           <dl class="demo__stats-list">
             <div class="demo__item">
-              <dt class="demo_number">5 кг</dt>
+              <dt class="demo__number">5 кг</dt>
               <dd class="demo__description">снижение веса</dd>
             </div>
             <div class="demo__item">
-              <dt class="demo_number">60 дней</dt>
+              <dt class="demo__number">60 дней</dt>
               <dd class="demo__description">затрачено времени</dd>
             </div>
           </dl>
@@ -112,11 +112,13 @@
           <div class="demo__slider slider">
             <img class="slider__img-before" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Фото кота до перехода на корм Cat Energy">
             <img class="slider__img-after" src="https://via.placeholder.com/251x240" width="251" height="240" alt="Фото кота после перехода на корм Cat Energy">
-            <button class="slider__toggle" type="button">Было</button>
-            <div class="slider__scale">
-              <div class="slider__bar"></div>
+            <div class="slider__panel">
+              <button class="slider__toggle" type="button">Было</button>
+              <div class="slider__scale">
+                <div class="slider__bar"></div>
+              </div>
+              <button class="slider__toggle" type="button">Стало</button>
             </div>
-            <button class="slider__toggle" type="button">Стало</button>
           </div>
         </section>
       </div>
@@ -124,36 +126,38 @@
 
     <footer class="page-footer">
       <div class="container">
-        <section class="map">
-          <div class="map__header">
-            <h2 class="map__slogan">Приглашаем к сотрудничеству дилеров!</h2>
-            <p class="map__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </p>
-          </div>
-          <img class="map__img" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Карта расположения офиса Cat Energy">
-        </section>
-        <a class="page-footer__logo">
-          <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#">Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="#">Инстаграм</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="#">Фейсбук</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive">
-            <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__logo" src="img/academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
+        <div class="page-footer__wrapper">
+          <section class="map">
+            <div class="map__header map__header--white">
+              <h2 class="map__slogan">Приглашаем к сотрудничеству дилеров!</h2>
+              <p class="map__address">
+                ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              </p>
+            </div>
+            <img class="map__img" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Карта расположения офиса Cat Energy">
+          </section>
+          <a class="page-footer__logo">
+            <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
           </a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="#">Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--insta" href="#">Инстаграм</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="#">Фейсбук</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive">
+              <span class="copyright__text">HTML Academy</span>
+              <img class="copyright__logo" src="img/academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
+            </a>
+          </div>
         </div>
       </div>
     </footer>

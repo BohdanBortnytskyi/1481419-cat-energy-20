@@ -1,0 +1,22 @@
+.map__header {
+  background-color: $basic-grey-light;
+  padding: 28px 20px 20px 20px;
+}
+
+.map__header--white {
+  background-color: $basic-white;
+}
+
+.map__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.map__img {
+  text-align: center;
+}
