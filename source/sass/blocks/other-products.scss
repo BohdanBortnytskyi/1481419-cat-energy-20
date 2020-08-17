@@ -1,0 +1,35 @@
+.other-products h2 {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.other-products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.other-products__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-grey-dark2;
+}
+
+.other-products__properties {
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+
+.other-products__ad {
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  width: 280px;
+  height: 289px;
+}

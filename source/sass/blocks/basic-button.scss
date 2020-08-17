@@ -1,9 +1,9 @@
-.slider__toggle {
+.basic-button {
+  background-color: $basic-green;
+  color: $basic-white;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
-  color: $basic-black;
+  border: none;
 }

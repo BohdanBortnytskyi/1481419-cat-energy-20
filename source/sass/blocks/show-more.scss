@@ -1,0 +1,20 @@
+.show-more__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+.show-more__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-grey-dark;
+}
+
+.show-more__button {
+  background-color: $basic-grey-light;
+  color: $special-grey-dark;
+}
