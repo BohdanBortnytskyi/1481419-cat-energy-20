@@ -1,5 +1,7 @@
 .site-list {
   list-style: none;
+  display: flex;
+  gap: 35px;
 }
 
 .site-list__item a {
@@ -10,9 +12,4 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;
-}
-
-.site-list {
-  display: flex;
-  gap: 35px;
 }
