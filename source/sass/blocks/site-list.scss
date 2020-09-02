@@ -11,3 +11,8 @@
   text-transform: uppercase;
   color: $basic-black;
 }
+
+.site-list {
+  display: flex;
+  gap: 35px;
+}
