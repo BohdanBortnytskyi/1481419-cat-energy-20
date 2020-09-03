@@ -5,7 +5,7 @@
 }
 
 .page__body {
-  min-width: 320px;
+  min-width: $body-min-width;
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
