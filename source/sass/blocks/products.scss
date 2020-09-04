@@ -2,11 +2,33 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
 }
 
 .products__item {
   padding: 20px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey-light;
+    min-width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey-light;
+    min-width: 205px;
+  }
 }
 
 .products__title {
@@ -24,6 +46,7 @@
   line-height: 16px;
   color: $special-grey-dark;
   margin-bottom: 20px;
+  width: auto;
 }
 
 .products__button {

@@ -1,4 +1,7 @@
-.main-nav__toggle {
-  width: 24px;
-  height: 16px;
+.main-nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

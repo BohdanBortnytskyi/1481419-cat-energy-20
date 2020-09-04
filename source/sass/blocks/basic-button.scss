@@ -1,4 +1,8 @@
 .basic-button {
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $basic-green;
   color: $basic-white;
   font-family: "Oswald", "Arial", sans-serif;
@@ -6,4 +10,12 @@
   font-weight: normal;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
