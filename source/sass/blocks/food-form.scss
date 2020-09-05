@@ -9,6 +9,14 @@
   padding-bottom: 30px;
 }
 
+.food-form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
 .food-form fieldset {
   margin-top: 25px;
 }
@@ -18,6 +26,18 @@
   line-height: 26px;
   text-transform: none;
   color: $basic-black;
+}
+
+.food-form__general-info {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.food-form__program-type {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .food-form input {
@@ -40,6 +60,7 @@
   text-transform: uppercase;
   color: $special-grey-dark;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .food-form__submit {
@@ -58,4 +79,16 @@
   font-weight: normal;
   text-transform: none;
   color: $basic-black;
+}
+
+.food-form__submit-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
 }
