@@ -38,22 +38,24 @@
         <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </header>
       <form class="food-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <input class="food-form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-          <label for="cat-name">Имя:*</label>
-          <input class="food-form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
-          <label for="cat-weight">Вес (кг):*</label>
-          <input class="food-form__input" type="number" name="cat-age" id="cat-age" placeholder="7">
-          <label for="cat-age">Возраст (лет):*</label>
-        </fieldset>
-        <fieldset>
-          <input class="food-form__radio" type="radio" name="program-type" id="program-slim" value="slim" checked>
-          <label for="program-slim">Похудение</label>
-          <input class="food-form__radio" type="radio" name="program-type" id="program-pro" value="pro">
-          <label for="program-pro">Набор массы</label>
-          <input class="food-form__radio" type="radio" name="program-type" id="program-advice" value="advice">
-          <label for="program-advice">Не знаю (нужен ваш совет)</label>
-        </fieldset>
+        <div class="food-form__wrapper">
+          <fieldset class="food-form__general-info">
+            <input class="food-form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+            <label for="cat-name">Имя:*</label>
+            <input class="food-form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+            <label for="cat-weight">Вес (кг):*</label>
+            <input class="food-form__input" type="number" name="cat-age" id="cat-age" placeholder="7">
+            <label for="cat-age">Возраст (лет):*</label>
+          </fieldset>
+          <fieldset class="food-form__program-type">
+            <input class="food-form__radio" type="radio" name="program-type" id="program-slim" value="slim" checked>
+            <label for="program-slim">Похудение</label>
+            <input class="food-form__radio" type="radio" name="program-type" id="program-pro" value="pro">
+            <label for="program-pro">Набор массы</label>
+            <input class="food-form__radio" type="radio" name="program-type" id="program-advice" value="advice">
+            <label for="program-advice">Не знаю (нужен ваш совет)</label>
+          </fieldset>
+        </div>
         <fieldset>
           <legend>Контактные данные (владельца кота)</legend>
           <input class="food-form__input food-form__input--email" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
@@ -76,8 +78,10 @@
           <input class="food-form__checkbox" type="checkbox" name="vitamins" id="vitamins">
           <label for="vitamins">Витамины</label>
         </fieldset>
-        <button class="basic-button food-form__submit" type="submit">Отправить заявку</button>
-        <span class="food-form__notice">* — Обязательные поля</span>
+        <div class="food-form__submit-wrapper">
+          <button class="basic-button food-form__submit" type="submit">Отправить заявку</button>
+          <span class="food-form__notice">* — Обязательные поля</span>
+        </div>
       </form>
     </main>
 

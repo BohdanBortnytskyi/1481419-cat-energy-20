@@ -8,12 +8,6 @@
     gap: 50px;
     flex-wrap: wrap;
   }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-  }
 }
 
 .products__item {
