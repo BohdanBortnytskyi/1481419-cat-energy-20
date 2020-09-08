@@ -1,15 +1,9 @@
 .container {
+  width: 91%;
   margin: 0 auto;
 
-  @media (max-width: $mobile-width-only) {
-    width: calc(100% - 40px);
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 1140px;
+    width: 1220px;
+    padding: 0 110px;
   }
 }

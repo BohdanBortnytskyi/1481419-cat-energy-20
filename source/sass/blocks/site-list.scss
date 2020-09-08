@@ -4,6 +4,20 @@
   gap: 35px;
 }
 
+.site-list__item {
+  padding-bottom: 10px;
+}
+
+.site-list__item--active {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: $basic-green;
+
+  @media (min-width: $desktop-width) {
+    border-bottom-color: $basic-white;
+  }
+}
+
 .site-list__item a {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -12,4 +26,17 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+    color: $basic-white;
+  }
 }
