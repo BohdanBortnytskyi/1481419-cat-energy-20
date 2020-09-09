@@ -1,3 +1,28 @@
+.show-more {
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $basic-grey2;
+
+  @media (min-width: $tablet-width) {
+    min-width: 204px;
+    max-width: 40%;
+    min-height: 361px;
+    padding: 40px;
+    border: 2px solid $basic-grey-light;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
+    min-height: 431px;
+    margin-left: -15px;
+  }
+}
+
 .show-more__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -6,15 +31,44 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special-black;
+  margin: 80px 0 10px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 83%;
+  }
 }
 
 .show-more__text {
   font-size: 12px;
   line-height: 16px;
   color: $special-grey-dark;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 85%;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 20px;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
 }
 
 .show-more__button {
   background-color: $basic-grey-light;
   color: $special-grey-dark;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

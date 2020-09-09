@@ -18,6 +18,12 @@
   }
 }
 
+.site-list:not(.site-list--index) .site-list__item--active {
+  @media (min-width: $desktop-width) {
+    border-bottom-color: $basic-green;
+  }
+}
+
 .site-list__item a {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -37,6 +43,18 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: normal;
+    color: $basic-white;
+  }
+}
+
+.site-list__item:not(.site-list--index) a {
+  @media (min-width: $desktop-width) {
+    color: $basic-black;
+  }
+}
+
+.site-list--index .site-list__item a {
+  @media (min-width: $desktop-width) {
     color: $basic-white;
   }
 }
