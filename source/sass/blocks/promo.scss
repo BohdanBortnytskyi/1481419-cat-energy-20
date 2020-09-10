@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     background: none;
+    width: calc(100% - 87px);
     padding-left: 87px;
     position: relative;
   }

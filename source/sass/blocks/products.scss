@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
   }
@@ -20,7 +21,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-grey-light;
-    min-width: 204px;
+    min-width: 244px;
     max-width: 40%;
     min-height: 361px;
     padding: 40px;
@@ -52,6 +53,10 @@
   text-transform: uppercase;
   color: $special-grey-dark2;
   margin: 0;
+
+  a {
+    color: inherit;
+  }
 
   @media (min-width: $tablet-width) {
     width: 65%;
