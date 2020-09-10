@@ -2,6 +2,7 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: contain;
   color: $basic-white;
   font-family: "Oswald", "Arial", sans-serif;
   width: 100%;
@@ -9,6 +10,9 @@
 
   @media (min-width: $tablet-width) {
     background: none;
+    width: calc(100% - 87px);
+    padding-left: 87px;
+    position: relative;
   }
 }
 
@@ -20,6 +24,9 @@
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -32,9 +39,18 @@
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .promo__button {
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 230px;
+    left: 87px;
+  }
 }
