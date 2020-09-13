@@ -63,7 +63,6 @@
 }
 
 .food-form__fieldset--program-type {
-
   @media (min-width: $tablet-width) {
     border: 1px solid $special-grey-controls2;
     padding: 25px;
@@ -136,6 +135,8 @@
   font-weight: normal;
   text-transform: none;
   color: $basic-black;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -151,9 +152,4 @@
   @media (min-width: $desktop-width) {
     gap: 62px;
   }
-}
-
-.food-form__notice {
-  display: flex;
-  justify-content: center;
 }
