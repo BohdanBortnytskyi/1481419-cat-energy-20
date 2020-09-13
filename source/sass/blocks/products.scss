@@ -16,7 +16,7 @@
 }
 
 .products__item {
-  padding: 20px;
+  padding: 20px 0;
   margin-bottom: 10px;
   border-top: 1px solid $basic-grey2;
   display: grid;
@@ -62,16 +62,16 @@
   margin: 0;
   width: 80px;
 
-  a {
-    color: inherit;
-  }
-
   @media (min-width: $tablet-width) {
     width: 65%;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.products__title a {
+  color: inherit;
 }
 
 .products__properties {
@@ -104,7 +104,6 @@
 
 .products__button {
   font-size: 16px;
-  width: 100%;
   grid-column-start: 1;
   grid-column-end: -1;
 }
