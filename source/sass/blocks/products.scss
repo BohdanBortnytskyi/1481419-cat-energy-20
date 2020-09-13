@@ -9,6 +9,10 @@
     gap: 60px;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
 }
 
 .products__item {
@@ -40,8 +44,11 @@
 
 .products__link {
   grid-row-start: 1;
-  grid-row-end: 2;
-  vertical-align: center;
+  grid-row-end: 3;
+  align-self: end;
+  padding-bottom: 15px;
+  display: block;
+  margin: 0 auto;
 }
 
 .products__title {
@@ -53,6 +60,7 @@
   text-transform: uppercase;
   color: $special-grey-dark2;
   margin: 0;
+  width: 80px;
 
   a {
     color: inherit;
@@ -74,7 +82,7 @@
   width: 100%;
   grid-column-start: 2;
   grid-column-end: -1;
-  margin-top: 0;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
