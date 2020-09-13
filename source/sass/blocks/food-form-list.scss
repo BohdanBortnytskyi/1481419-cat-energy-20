@@ -1,0 +1,51 @@
+.food-form-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.food-form-list--additional {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.food-form-list--contatcs {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 80px;
+  }
+}
+
+.food-form-list__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+}
+
+.food-form-list--additional .food-form-list__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.food-form-list--contatcs .food-form-list__item {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
