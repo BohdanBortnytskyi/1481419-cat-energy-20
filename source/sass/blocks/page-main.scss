@@ -5,6 +5,11 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-main__header p {
@@ -15,4 +20,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-black;
+  width: 226px;
+  margin-top: 37px;
+  margin-left: 40px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 325px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -3,4 +3,15 @@
   line-height: 20px;
   text-align: center;
   color: $basic-white;
+  padding-top: 186px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+    padding-left: 423px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }

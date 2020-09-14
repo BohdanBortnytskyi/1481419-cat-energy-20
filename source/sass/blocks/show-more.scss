@@ -1,25 +1,26 @@
 .show-more {
   text-align: center;
   padding-bottom: 25px;
+  border-top: 1px solid $basic-grey2;
   border-bottom: 1px solid $basic-grey2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     min-width: 204px;
-    max-width: 40%;
+    max-width: 33%;
     min-height: 361px;
     padding: 40px;
+    background: none;
     border: 2px solid $basic-grey-light;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    width: 256px;
+    width: 246px;
     min-height: 431px;
-    margin-left: -15px;
+    box-sizing: border-box;
   }
 }
 

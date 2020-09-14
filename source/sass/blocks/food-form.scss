@@ -7,6 +7,13 @@
   text-transform: uppercase;
   color: $special-grey-dark;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .food-form__wrapper {
@@ -17,8 +24,22 @@
   }
 }
 
-.food-form fieldset {
-  margin-top: 25px;
+.food-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $special-separator;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-top: 70px;
+  }
+}
+
+.food-form__fieldset--no-border {
+  border: none;
 }
 
 .food-form legend {
@@ -26,21 +47,33 @@
   line-height: 26px;
   text-transform: none;
   color: $basic-black;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.food-form__general-info {
+.food-form__fieldset--general-info {
   @media (min-width: $desktop-width) {
     width: 570px;
   }
 }
 
-.food-form__program-type {
+.food-form__fieldset--program-type {
+  @media (min-width: $tablet-width) {
+    border: 1px solid $special-grey-controls2;
+    padding: 25px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 570px;
   }
 }
 
-.food-form input {
+.food-form__input {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -48,7 +81,17 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-grey-dark;
-  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  height: 45px;
+  border: 1px solid $special-grey-controls2;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.food-form__radio {
+  width: 30px;
+  height: 30px;
 }
 
 .food-form textarea {
@@ -60,7 +103,14 @@
   text-transform: uppercase;
   color: $special-grey-dark;
   margin-bottom: 15px;
+  padding: 13px;
   width: 100%;
+  border: 1px solid $special-grey-controls2;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+  }
 }
 
 .food-form__submit {
@@ -69,6 +119,12 @@
   display: block;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 40%;
+    min-height: 52px;
+    margin-right: 60px;
+  }
 }
 
 .food-form__notice {
@@ -79,16 +135,21 @@
   font-weight: normal;
   text-transform: none;
   color: $basic-black;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .food-form__submit-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
-    gap: 60px;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
+    gap: 62px;
   }
 }

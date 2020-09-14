@@ -39,44 +39,76 @@
       </header>
       <form class="food-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="food-form__wrapper">
-          <fieldset class="food-form__general-info">
-            <input class="food-form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-            <label for="cat-name">Имя:*</label>
-            <input class="food-form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
-            <label for="cat-weight">Вес (кг):*</label>
-            <input class="food-form__input" type="number" name="cat-age" id="cat-age" placeholder="7">
-            <label for="cat-age">Возраст (лет):*</label>
+          <fieldset class="food-form__fieldset food-form__fieldset--general-info">
+            <ul class="food-form-list">
+              <li class="food-form-list__item">
+                <label for="cat-name">Имя:*</label>
+                <input class="food-form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+              </li>
+              <li class="food-form-list__item">
+                <label for="cat-weight">Вес (кг):*</label>
+                <input class="food-form__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
+              </li>
+              <li class="food-form-list__item">
+                <label for="cat-age">Возраст (лет):*</label>
+                <input class="food-form__input" type="number" name="cat-age" id="cat-age" placeholder="7">
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="food-form__program-type">
-            <input class="food-form__radio" type="radio" name="program-type" id="program-slim" value="slim" checked>
-            <label for="program-slim">Похудение</label>
-            <input class="food-form__radio" type="radio" name="program-type" id="program-pro" value="pro">
-            <label for="program-pro">Набор массы</label>
-            <input class="food-form__radio" type="radio" name="program-type" id="program-advice" value="advice">
-            <label for="program-advice">Не знаю (нужен ваш совет)</label>
+          <fieldset class="food-form__fieldset food-form__fieldset--program-type">
+            <ul class="food-form-list">
+              <li class="food-form-list__item">
+                <input class="food-form__radio" type="radio" name="program-type" id="program-slim" value="slim" checked>
+                <label for="program-slim">Похудение</label>
+              </li>
+              <li class="food-form-list__item">
+                <input class="food-form__radio" type="radio" name="program-type" id="program-pro" value="pro">
+                <label for="program-pro">Набор массы</label>
+              </li>
+              <li class="food-form-list__item">
+                <input class="food-form__radio" type="radio" name="program-type" id="program-advice" value="advice">
+                <label for="program-advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
           </fieldset>
         </div>
-        <fieldset>
+        <fieldset class="food-form__fieldset food-form__fieldset--no-border">
           <legend>Контактные данные (владельца кота)</legend>
-          <input class="food-form__input food-form__input--email" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
-          <label for="owner-email">E-mail:*</label>
-          <input class="food-form__input food-form__input--phone" type="tel" name="owner-pnone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
-          <label for="owner-phone">Телефон:*</label>
+          <ul class="food-form-list food-form-list--contatcs">
+            <li class="food-form-list__item">
+              <label for="owner-email">E-mail:*</label>
+              <input class="food-form__input food-form__input--email" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+            </li>
+            <li class="food-form-list__item">
+              <label for="owner-phone">Телефон:*</label>
+              <input class="food-form__input food-form__input--phone" type="tel" name="owner-pnone" id="owner-phone" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="food-form__fieldset food-form__fieldset--no-border">
           <legend>Комментарий</legend>
           <textarea class="food-form__area" name="comment" rows="5">Расскажите обо всех повадках кота</textarea>
         </fieldset>
-        <fieldset>
+        <fieldset class="food-form__fieldset food-form__fieldset--no-border">
           <legend>Дополнительно</legend>
-          <input class="food-form__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
-          <label for="sugar-substitute">Сахарозаменитель</label>
-          <input class="food-form__checkbox" type="checkbox" name="drink-water" id="drink-water">
-          <label for="drink-water">Питьевая вода</label>
-          <input class="food-form__checkbox" type="checkbox" name="milk" id="milk">
-          <label for="milk">Молоко</label>
-          <input class="food-form__checkbox" type="checkbox" name="vitamins" id="vitamins">
-          <label for="vitamins">Витамины</label>
+          <ul class="food-form-list food-form-list--additional">
+            <li class="food-form-list__item">
+              <input class="food-form__checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+              <label for="sugar-substitute">Сахарозаменитель</label>
+            </li>
+            <li class="food-form-list__item">
+              <input class="food-form__checkbox" type="checkbox" name="drink-water" id="drink-water">
+              <label for="drink-water">Питьевая вода</label>
+            </li>
+            <li class="food-form-list__item">
+              <input class="food-form__checkbox" type="checkbox" name="milk" id="milk">
+              <label for="milk">Молоко</label>
+            </li>
+            <li class="food-form-list__item">
+              <input class="food-form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+              <label for="vitamins">Витамины</label>
+            </li>
+          </ul>
         </fieldset>
         <div class="food-form__submit-wrapper">
           <button class="basic-button food-form__submit" type="submit">Отправить заявку</button>

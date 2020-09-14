@@ -10,8 +10,5 @@
   font-weight: normal;
   text-transform: uppercase;
   border: none;
-
-  @media (min-width: $tablet-width) {
-    width: 244px;
-  }
+  width: 100%;
 }
