@@ -7,7 +7,7 @@
   }
 }
 
-.demo_wrapper {
+.demo__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,7 @@
   }
 }
 
-.demo_desktop-left {
+.demo__desktop-left {
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
@@ -41,8 +41,10 @@
 }
 
 .demo__article {
-  font-size: 16px;
-  line-height: 24px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .demo__stats-list {
@@ -140,6 +142,7 @@
   justify-content: center;
   gap: 5px;
   margin-top: 35px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     width: 180px;
